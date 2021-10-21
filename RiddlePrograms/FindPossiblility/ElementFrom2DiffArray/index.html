@@ -1,0 +1,46 @@
+<script src="./index.js"> </script>
+<link rel="stylesheet" href="./index.scss">
+
+<head>
+    <h2>Give 2 array integer arrays</h2>
+
+    <h4>I will find out the Probability of obtaining pairs from
+        two arrays such that element from the first array is smaller than that of the second array.</h4>
+</head>
+
+<body>
+    array 1 :
+    <textarea id="array1txt"> </textarea>
+    <br />
+    array 2 :
+    <textarea id="array2txt"> </textarea>
+    </br>
+
+    <button id="findOut" onclick="findOutPossibility()">Find out</button>
+    <br />
+
+    <h3 id="resultHeader">
+    </h3>
+
+            <br>
+
+            <div id="resultSection" style="display: none;">
+                <table class="output-table">
+                    <tr>
+                        <th>
+                            Number Of Total Pairs
+                        </th>
+                        <th>
+                            Number Of Possible Pairs
+                        </th>
+                    </tr>
+                    <tr>
+                        <td id="outputTotalPairs">
+                        </td>
+                        <td id="outputFavorablePairs"> 
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+</body>
