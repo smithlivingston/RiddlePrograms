@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./northByNorthWest.scss">
+    <h1> North By North West </h1>
+    <div class="center-boxed">
+
+        <p>
+            Provide a path by choosing the distance unit and draw the path using
+            the arrow keys. Also use numbers for selecting units.
+            My program will highlight you the shortest path you can reach without twist turns.
+        </p>
+    </div>
+
+    <h4>Go Ahead!</h4>
+    </div>
+
+</head>
+
+<body>
+    <div class="center">
+    <button class="action-btn" onclick="clearAllPaths()">Clear</button>
+    <button class="action-btn" id="findOutBtn" onclick="highlightShortestPath()">Find Shortest Path</button>
+        </div>
+
+    <div class="container" style="padding-left: 7%">
+    <div id="playgoround" class="row">
+        <div class="col-xs-2">
+            <button class="button-squared-primary btn-square-md" id="" onclick="setUnitInMeters(1, this)">1 Meter</button>
+            <button class="button-squared-primary btn-square-md" id="" onclick="setUnitInMeters(2, this)">2 Meters</button>
+            <button class="button-squared-primary btn-square-md" id="" onclick="setUnitInMeters(3, this)">3 Meters</button>
+            <button class="button-squared-primary btn-square-md" id="" onclick="setUnitInMeters(5, this)">5 Meters</button>
+        </div>
+
+        <div class="col-xs-6">
+            <canvas id="canvasSection" width="600px" height="600px" style="border:1px solid #000000;">
+            </canvas>
+        </div>
+
+        <div class="col-xs-3" style="padding-left: 10%;">
+            <button class="button-squared-primary btn-square-md" onclick="addPath('up')">Move Up</button>
+            <button class="button-squared-primary btn-square-md" onclick="addPath('down')">Move Down</button>
+            <button class="button-squared-primary btn-square-md" onclick="addPath('left')">Move Left</button>
+            <button class="button-squared-primary btn-square-md" onclick="addPath('right')">Move Right</button>
+        </div>
+    </div>
+    </div>
+
+ 
+    </div>
+
+</body>
+
+<script src="./northByNorthWest.js">
+</script>
