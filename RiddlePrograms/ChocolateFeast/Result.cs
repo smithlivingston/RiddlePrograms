@@ -34,13 +34,9 @@ class Result
            if(m >= numberOfWraps)
            {
                if(m == numberOfWraps)
-               {
-                   chocolateConsumed += 1;
-                    return chocolateConsumed;
-               }
-               else {
+                    return chocolateConsumed += 1;
+               else 
                 return chocolateConsumed;
-               }
            }
            else 
            {
